@@ -4,45 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Quiz</title>
 </head>
 <body>
+    <p>Дайте відповіді на питання:</p>
     <form method="POST" action="https://formspree.io/alavrinok@gmail.com">
-        <label for="client-name">Name: </label>
-        <input type="text" name="client-name" placeholder="Name" id="client-name"
-            required>
+        <fieldset>
+            <label>Назвіть другу планету від Сонця: 
+            <input type="text" name="answer1" title="Абвг" required autofocus>
+        </label>
+            <br>
+            <label>На якій планеті присутні форми життя 
+            <input type="text" name="answer2"  title="Абвг" required>
+        </label>
+            <br>
+            <label>Назвіть планету, на якій розташована найвища відома гора в Сонячній системі 
+            <input type="text" name="answer3" title="Абвг" required>
+        </label>
+        </fieldset>
+        <fieldset>
+            <label>Вкажіть планети з наявною атмосферою<br>
+            Виберіть дві планети<br>
+        <input type="checkbox" name="Меркурій"> Меркурій<br>
+         </label>
+         <label>
+     <input type="checkbox" name="Венера"> Венера<br>
+     </label>
+     <label>
+     <input type="checkbox" name="Марс"> Марс<br>
+     </label>
+     <label>
+     <input type="checkbox" name="Земля"> Земля<br>
+        </label>
+            <br>
+            <label>Оберіть планету з найвищим атмосферним тиском на поверхні<br>
+        <input type="radio" name="answer5" value="Mercuri">Меркурій<br>
+        </label>
+         <label>
+    <input type="radio" name="answer5" value="Earth">Земля<br>
+    </label>
+     <label>
+    <input type="radio" name="answer5" value="Venus">Венера<br>
+    </label>
+     <label>
+    <input type="radio" name="answer5" value="Mars">Марс<br>
+        </label>
+        </fieldset>
         <br>
-        <label>Password:
-            <input type="password" name="client-password" placeholder="Password"
-            required>
+        <label>First name: 
+            <input type="text" name="First name" placeholder="First name" required>
+        </label>
+        <br>
+        <label>Last name: 
+            <input type="text" name="Last name" placeholder="Last name" required>
         </label>
         <br>
         <label>Email:
             <input type="email" name="client-email" placeholder="Email" required>
         </label>
         <br>
-        <label>Passport Code:
-            <input type="text" name="client-passport" placeholder="AB123456" 
-             required pattern="[A-Z]{2}[\d]{6}" title="AB123456">
-        </label>
-        <br>
-        <label>Gender:</label>
+        <label>Educational level:</label>
         <br>
         <label>
-            <input type="radio" name="client-gender" value="male" checked>Male
+            <input type="radio" name="educational level" value="secondary education" checked>Primary education
         </label>
         <br>
         <label>
-            <input type="radio" name="client-gender" value="female">Female
+            <input type="radio" name="educational level" value="Secondary education">Secondary education
         </label>
         <br>
         <label>
-            <input type="radio" name="client-gender" value="other">Other
+            <input type="radio" name="educational level" value="Grading scale">Grading scale
+        </label>
+        <br>
+        <label>
+             <input type="radio" name="educational level" value="Other">Other
         </label>
         <br>
         <input type="submit" value="SEND">
         <input type="reset">
     </form>
-    
 </body>
 </html>
